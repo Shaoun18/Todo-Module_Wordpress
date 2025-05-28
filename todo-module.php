@@ -6,7 +6,7 @@
  * Description: A simple To-Do List managed via WordPress Admin using AJAX.
  * Version: 1.0.0
  * Author: Shaoun Chandra Shill
- * Author URI: https://zettabyteincorp.com/
+ * Author URI: https://programmershaoun.com/
  * Text Domain: 
  * Requires at least: 6.0
  * Requires PHP: 7.4
