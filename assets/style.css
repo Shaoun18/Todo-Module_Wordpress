@@ -1,0 +1,15 @@
+.todo-container { 
+    padding: 20px; 
+    background: #fff; 
+    max-width: 600px; 
+}
+
+#task-list li { 
+    margin: 10px 0; 
+    padding: 10px; 
+    border-bottom: 1px solid #ddd; 
+}
+
+#task-list li.done .task-title { 
+    text-decoration: line-through; color: green; 
+}
