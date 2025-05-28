@@ -48,20 +48,29 @@ function todo_show_tasks_frontend() {
 
     ob_start();
     ?>
-    
     <div class="frontend-todo">
-        <h3>My To-Do List</h3>
-        <ul>
-            <?php foreach ($tasks as $task): ?>
-                <li class="<?= $task->is_done ? 'done' : '' ?>">
-                    <strong><?= esc_html($task->title) ?></strong><br>
-                    <small><?= esc_html($task->description) ?></small>
-                </li>
-            <?php endforeach; ?>
-        </ul>
+        <h2>ToDo Module</h2>
+        <table class="todo-table">
+            <thead>
+                <tr>
+                    <th>Task Number</th>
+                    <th>Task Name</th>
+                    <th>Task Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php $i = 1; foreach ($tasks as $task): ?>
+                    <tr class="<?= $task->is_done ? 'done' : '' ?>">
+                        <td><?= $i++ ?>.</td>
+                        <td><?= esc_html($task->title) ?></td>
+                        <td><?= esc_html($task->description) ?></td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
     </div>
-
     <?php
     return ob_get_clean();
 }
+
 
