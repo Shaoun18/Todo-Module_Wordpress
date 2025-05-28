@@ -24,11 +24,23 @@ A simple and lightweight WordPress plugin that allows admins to manage a to-do l
 ```
 
 todo-module/
-├── assets/         # Contains CSS and JavaScript files
-├── db/             # Database setup logic (install.php)
-├── includes/       # Admin menu and AJAX handlers
-├── templates/      # Admin page HTML layout
-├── todo-module.php # Main plugin bootstrap file
+│
+├── db/
+│   └── install.php
+│
+├── includes/
+│   ├── ajax-handlers.php
+│   └── admin-menu.php
+│
+├── assets/
+│   ├── style.css
+│   └── script.js
+│
+├── templates/
+│   └── todo-admin-page.php
+│
+├── todo-module.php
+
 
 ````
 
