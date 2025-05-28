@@ -60,7 +60,7 @@ todo-module/
 
 🚀 Installation
 
-1. **Download or Clone** this repository into the `/wp-content/plugins/` directory:
+1. Download or Clone this repository into the `/wp-content/plugins/` directory:
    ```bash
    git clone https://github.com/yourusername/todo-module.git
 ````
