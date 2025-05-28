@@ -33,5 +33,16 @@
 
 .todo-table tr.done td {
     color: green;
-    text-decoration: line-through;
+    /* text-decoration: line-through; */
 }
+
+.done-status {
+    color: green;
+    font-weight: bold;
+}
+
+.not-done-status {
+    color: red;
+    font-weight: bold;
+}
+
