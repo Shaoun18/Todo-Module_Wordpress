@@ -39,30 +39,27 @@ require_once plugin_dir_path(__FILE__) . 'includes/ajax-handlers.php';
             ///   Frontend View the page Code  /////
 
 
-//Register shortcode to display tasks on frontend
-add_shortcode( 'todo_task_list', 'todo_show_tasks_frontend');
+// Register shortcode to display tasks on frontend
+add_shortcode('todo_task_list', 'todo_show_tasks_frontend');
 
-function todo_show_tasks_frontend(){
+function todo_show_tasks_frontend() {
     global $wpdb;
     $tasks = $wpdb->get_results("SELECT * FROM {$wpdb->prefix}todo_tasks");
 
     ob_start();
     ?>
-
     <div class="frontend-todo">
-        <h3> My To-Do List</h3>
-            <ul>
-                <?php foreach($tasks as $task): ?>
-                    <li class="<?= $task->is_done ? 'done' : '' ?>">
-                        <strong> <?esc_html($task -> title) ?> </strong><br>
-                        <small> <?esc_html($task -> description) ?> </small><br>
-                    </li>
-                <?php endforeach; ?>
-
-            </ul>
-        </div>
-
-        <?php
-        
-        return ob_get_clean();
+        <h3>My To-Do List</h3>
+        <ul>
+            <?php foreach ($tasks as $task): ?>
+                <li class="<?= $task->is_done ? 'done' : '' ?>">
+                    <strong><?= esc_html($task->title) ?></strong><br>
+                    <small><?= esc_html($task->description) ?></small>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+    <?php
+    return ob_get_clean();
 }
+
