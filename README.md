@@ -41,6 +41,9 @@ todo-module/
 ├── templates/
 │   └── todo-admin-page.php
 │
+├── front/
+│   └── shortcode.php
+│
 ├── todo-module.php
 │
 ├── README.md
