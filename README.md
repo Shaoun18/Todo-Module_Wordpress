@@ -9,7 +9,7 @@ A simple and lightweight WordPress plugin that allows admins to manage a to-do l
 
 ---
 
-## ✨ Features
+✨ Features
 
 - ✅ Add, edit, delete, and mark tasks as complete
 - ⚡ AJAX-based task management for a smooth experience
@@ -19,7 +19,7 @@ A simple and lightweight WordPress plugin that allows admins to manage a to-do l
 
 ---
 
-## 📂 Plugin Structure
+📂 Plugin Structure
 
 ```
 
@@ -34,31 +34,31 @@ todo-module/
 
 ---
 
-## 🧰 Requirements
+🧰 Requirements
 
 - WordPress 6.0 or higher
 - PHP 7.4 or higher
 
 ---
 
-## 🚀 Installation
+🚀 Installation
 
 1. **Download or Clone** this repository into the `/wp-content/plugins/` directory:
    ```bash
    git clone https://github.com/yourusername/todo-module.git
 ````
 
-2. **Activate the Plugin**
+2. Activate the Plugin
    Go to your WordPress Dashboard → Plugins → Find "To-Do Module" → Click **Activate**
 
-3. **Use the Plugin**
+3. Use the Plugin
 
    * Navigate to `To-Do Module` in the WordPress Admin menu.
    * Start adding and managing your tasks!
 
 ---
 
-## 🔧 Customization
+🔧 Customization
 
 You can extend the plugin by:
 
@@ -68,13 +68,13 @@ You can extend the plugin by:
 
 ---
 
-## 📜 License
+📜 License
 
 This plugin is licensed under the [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html).
 
 ---
 
-## 🧑‍💻 Author
+🧑‍💻 Author
 
 Shaoun Chandra Shill
 🌐 [https://programmershaoun.com](https://programmershaoun.com)
