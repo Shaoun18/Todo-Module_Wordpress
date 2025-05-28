@@ -21,8 +21,6 @@ A simple and lightweight WordPress plugin that allows admins to manage a to-do l
 
 📂 Plugin Structure
 
-```
-
 ````
 
 todo-module/
@@ -49,7 +47,6 @@ todo-module/
 └── .gitignore
     Specifies files and directories to be ignored by Git.
 
----
 ---
 
 🧰 Requirements
