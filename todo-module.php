@@ -48,6 +48,7 @@ function todo_show_tasks_frontend() {
 
     ob_start();
     ?>
+    
     <div class="frontend-todo">
         <h3>My To-Do List</h3>
         <ul>
@@ -59,6 +60,7 @@ function todo_show_tasks_frontend() {
             <?php endforeach; ?>
         </ul>
     </div>
+
     <?php
     return ob_get_clean();
 }
