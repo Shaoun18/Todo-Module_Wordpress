@@ -23,6 +23,8 @@ A simple and lightweight WordPress plugin that allows admins to manage a to-do l
 
 ```
 
+````
+
 todo-module/
 │
 ├── db/
@@ -40,10 +42,14 @@ todo-module/
 │   └── todo-admin-page.php
 │
 ├── todo-module.php
+│
+├── README.md
+│   Project overview and instructions.
+│
+└── .gitignore
+    Specifies files and directories to be ignored by Git.
 
-
-````
-
+---
 ---
 
 🧰 Requirements
