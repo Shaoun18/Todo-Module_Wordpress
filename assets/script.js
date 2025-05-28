@@ -1,4 +1,5 @@
 jQuery(document).ready(function ($) {
+    // Add Task
     $('#add-task-form').on('submit', function (e) {
         e.preventDefault();
         $.post(todo_ajax.ajax_url, {
@@ -11,6 +12,7 @@ jQuery(document).ready(function ($) {
         });
     });
 
+    // Toggle Task
     $('.toggle-done').on('change', function () {
         const li = $(this).closest('li');
         $.post(todo_ajax.ajax_url, {
@@ -23,6 +25,7 @@ jQuery(document).ready(function ($) {
         });
     });
 
+    // Delete Task
     $('.delete-task').on('click', function () {
         if (!confirm('Delete this task?')) return;
         const li = $(this).closest('li');
@@ -35,20 +38,42 @@ jQuery(document).ready(function ($) {
         });
     });
 
+    // Open Edit Panel
     $('.edit-task').on('click', function () {
         const li = $(this).closest('li');
-        const title = prompt('New Title:', li.find('.task-title').text());
-        const desc = prompt('New Description:', li.find('.task-desc').text());
-        if (!title) return;
+        const id = li.data('id');
+        const title = li.find('.task-title').text();
+        const description = li.find('.task-desc').text();
+
+        $('#edit-task-form [name="id"]').val(id);
+        $('#edit-task-form [name="title"]').val(title);
+        $('#edit-task-form [name="description"]').val(description);
+
+        $('#edit-panel').addClass('open');
+    });
+
+    // Save Edited Task
+    $('#edit-task-form').on('submit', function (e) {
+        e.preventDefault();
+
+        const id = $(this).find('[name="id"]').val();
+        const title = $(this).find('[name="title"]').val();
+        const description = $(this).find('[name="description"]').val();
 
         $.post(todo_ajax.ajax_url, {
             action: 'edit_task',
-            id: li.data('id'),
+            id,
             title,
-            description: desc,
+            description,
             _ajax_nonce: todo_ajax.nonce
         }, function () {
+            $('#edit-panel').removeClass('open');
             location.reload();
         });
+    });
+
+    // Close Edit Panel
+    $('#close-edit-panel').on('click', function () {
+        $('#edit-panel').removeClass('open');
     });
 });

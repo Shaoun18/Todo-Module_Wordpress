@@ -11,7 +11,8 @@
 }
 
 #task-list li.done .task-title { 
-    text-decoration: line-through; color: rgb(6, 0, 62); 
+    color: rgb(0, 0, 72);
+    /* text-decoration: line-through; color: rgb(6, 0, 62);  */
 }
 
 .todo-table {
@@ -44,5 +45,23 @@
 .not-done-status {
     color: red;
     font-weight: bold;
+}
+
+#edit-panel {
+    display: none;
+    position: fixed;
+    top: 20%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 300px;
+    background: #858484;
+    padding: 10px;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: right 0.3s ease;
+}
+
+#edit-panel.open {
+    display: block;
 }
 

@@ -23,3 +23,15 @@ $tasks = $wpdb->get_results("SELECT * FROM {$wpdb->prefix}todo_tasks");
         <?php endforeach; ?>
     </ul>
 </div>
+
+<!-- Edit Task Side Panel -->
+<div id="edit-panel">
+    <h3>Edit Task</h3>
+    <form id="edit-task-form">
+        <input type="hidden" name="id">
+        <input type="text" name="title" placeholder="Task Title" required>
+        <input type="text" name="description" placeholder="Description">
+        <button type="submit">Save</button>
+        <button type="button" id="close-edit-panel">Cancel</button>
+    </form>
+</div>
