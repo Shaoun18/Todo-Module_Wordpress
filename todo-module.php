@@ -11,7 +11,7 @@ if (!defined('ABSPATH')) {
 }
 
 // Activation hook
-require_once plugin_dir_path(__FILE__) . 'db/install.php';
+require_once plugin_dir_path(__FILE__) . 'db/database.php';
 register_activation_hook(__FILE__, 'todo_module_create_table');
 
 // Enqueue assets
@@ -31,7 +31,7 @@ function todo_module_enqueue() {
 // Admin menu
 require_once plugin_dir_path(__FILE__) . 'includes/admin-menu.php';
 
-// AJAX Handlers
+// AJAX HandlersPP
 require_once plugin_dir_path(__FILE__) . 'includes/ajax-handlers.php';
 
 // Frontend ShortCode
