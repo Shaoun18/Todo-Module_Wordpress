@@ -28,7 +28,7 @@ A simple and lightweight WordPress plugin that allows admins to manage a to-do l
 todo-module/
 │
 ├── db/
-│   └── install.php
+│   └── database.php
 │
 ├── includes/
 │   ├── ajax-handlers.php
