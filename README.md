@@ -3,7 +3,7 @@
 ---
 
 ```markdown
- ✅ To-Do Module – WordPress Plugin
+✅ To-Do Module – WordPress Plugin
 
 A simple and lightweight WordPress plugin that allows admins to manage a to-do list directly from the WordPress dashboard. Built using a clean, modular code structure with AJAX for dynamic task handling.
 
@@ -20,7 +20,6 @@ A simple and lightweight WordPress plugin that allows admins to manage a to-do l
 ---
 
 📂 Plugin Structure
-
 ```
 
 ````
@@ -73,8 +72,8 @@ todo-module/
 
 3. Use the Plugin
 
-   * Navigate to `To-Do Module` in the WordPress Admin menu.
-   * Start adding and managing your tasks!
+   - Navigate to `To-Do Module` in the WordPress Admin menu.
+   - Start adding and managing your tasks!
 
 ---
 
@@ -82,9 +81,9 @@ todo-module/
 
 You can extend the plugin by:
 
-* Adding filters and actions
-* Improving the UI with more features (e.g., due dates, categories)
-* Making it frontend-visible (currently admin-only)
+- Adding filters and actions
+- Improving the UI with more features (e.g., due dates, categories)
+- Making it frontend-visible (currently admin-only)
 
 ---
 

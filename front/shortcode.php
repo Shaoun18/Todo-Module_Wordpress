@@ -2,12 +2,13 @@
 // Register shortcode to display tasks on frontend
 add_shortcode('todo_task_list', 'todo_show_tasks_frontend');
 
-function todo_show_tasks_frontend() {
+function todo_show_tasks_frontend()
+{
     global $wpdb;
     $tasks = $wpdb->get_results("SELECT * FROM {$wpdb->prefix}todo_tasks");
 
     ob_start();
-    ?>
+?>
     <div class="frontend-todo">
         <h2>ToDo Module</h2>
         <table class="todo-table">
@@ -20,7 +21,8 @@ function todo_show_tasks_frontend() {
                 </tr>
             </thead>
             <tbody>
-                <?php $i = 1; foreach ($tasks as $task): ?>
+                <?php $i = 1;
+                foreach ($tasks as $task): ?>
                     <tr class="<?= $task->is_done ? 'done' : '' ?>">
                         <td><?= $i++ ?>.</td>
                         <td><?= esc_html($task->title) ?></td>
@@ -33,6 +35,6 @@ function todo_show_tasks_frontend() {
             </tbody>
         </table>
     </div>
-    <?php
+<?php
     return ob_get_clean();
 }

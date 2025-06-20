@@ -1,67 +1,67 @@
-.todo-container { 
-    padding: 20px; 
-    background: #9b9a9a; 
-    max-width: 600px; 
+.todo-container {
+  padding: 20px;
+  background: #9b9a9a;
+  max-width: 600px;
 }
 
-#task-list li { 
-    margin: 10px 0; 
-    padding: 10px; 
-    border-bottom: 1px solid #898888; 
+#task-list li {
+  margin: 10px 0;
+  padding: 10px;
+  border-bottom: 1px solid #898888;
 }
 
-#task-list li.done .task-title { 
-    color: rgb(0, 0, 72);
-    /* text-decoration: line-through; color: rgb(6, 0, 62);  */
+#task-list li.done .task-title {
+  color: rgb(0, 0, 72);
+  /* text-decoration: line-through; color: rgb(6, 0, 62);  */
 }
 
 .todo-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
-.todo-table th, .todo-table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
+.todo-table th,
+.todo-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
 }
 
 .todo-table th {
-    background-color: #f2f2f2;
-    font-weight: bold;
+  background-color: #f2f2f2;
+  font-weight: bold;
 }
 
 .todo-table tr.done td {
-    color: green;
-    /* text-decoration: line-through; */
+  color: green;
+  /* text-decoration: line-through; */
 }
 
 .done-status {
-    color: green;
-    font-weight: bold;
+  color: green;
+  font-weight: bold;
 }
 
 .not-done-status {
-    color: red;
-    font-weight: bold;
+  color: red;
+  font-weight: bold;
 }
 
 #edit-panel {
-    display: none;
-    position: fixed;
-    top: 20%;
-    right: 0;
-    transform: translateY(-50%);
-    width: 300px;
-    background: #858484;
-    padding: 10px;
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    transition: right 0.3s ease;
+  display: none;
+  position: fixed;
+  top: 20%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 300px;
+  background: #858484;
+  padding: 10px;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: right 0.3s ease;
 }
 
 #edit-panel.open {
-    display: block;
+  display: block;
 }
-

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Plugin Name: Todo Module
  * Description: A simple To-Do List managed via WordPress Admin using AJAX.
@@ -18,7 +19,8 @@ register_activation_hook(__FILE__, 'todo_module_create_table');
 add_action('admin_enqueue_scripts', 'todo_module_enqueue');
 add_action('wp_enqueue_scripts', 'todo_module_enqueue');
 
-function todo_module_enqueue() {
+function todo_module_enqueue()
+{
     wp_enqueue_style('todo-style', plugin_dir_url(__FILE__) . 'assets/style.css');
     wp_enqueue_script('todo-script', plugin_dir_url(__FILE__) . 'assets/script.js', ['jquery'], null, true);
 

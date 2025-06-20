@@ -13,13 +13,13 @@ $tasks = $wpdb->get_results("SELECT * FROM {$wpdb->prefix}todo_tasks");
 
     <ul id="task-list">
         <?php foreach ($tasks as $task): ?>
-        <li data-id="<?= $task->id ?>" class="<?= $task->is_done ? 'done' : '' ?>">
-            <input type="checkbox" class="toggle-done" <?= $task->is_done ? 'checked' : '' ?>>
-            <span class="task-title"><?= esc_html($task->title) ?></span>
-            <span class="task-desc"><?= esc_html($task->description) ?></span>
-            <button class="edit-task">Edit</button>
-            <button class="delete-task">Delete</button>
-        </li>
+            <li data-id="<?= $task->id ?>" class="<?= $task->is_done ? 'done' : '' ?>">
+                <input type="checkbox" class="toggle-done" <?= $task->is_done ? 'checked' : '' ?>>
+                <span class="task-title"><?= esc_html($task->title) ?></span>
+                <span class="task-desc"><?= esc_html($task->description) ?></span>
+                <button class="edit-task">Edit</button>
+                <button class="delete-task">Delete</button>
+            </li>
         <?php endforeach; ?>
     </ul>
 </div>
